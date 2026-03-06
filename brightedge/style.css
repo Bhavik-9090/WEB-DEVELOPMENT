@@ -1,0 +1,125 @@
+nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color:aquamarine;
+}
+
+header {
+    background-color: #141414;
+    color: rgba(255, 255, 255, 0.693);
+    padding: 20px;
+}
+footer {
+    background-color: #2185d780;   /* footer color */
+    color: rgb(147, 119, 119);                /* text color */
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("images/bg.jpg");
+    color: rgba(128, 128, 128, 0.261);
+    background-size: cover;      /* Fit screen */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    color: #e8561c;
+}
+header {
+    width: 100%;
+    padding: 18px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.918);
+}
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #2f5bea;
+}
+
+nav a {
+    margin: 0 16px;
+    text-decoration: none;
+    color: #190bdb;
+    font-weight: 500;
+}
+
+.btn-primary {
+    padding: 10px 22px;
+    background: linear-gradient(135deg, #2f5bea, #6a9cff);
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+}
+.hero {
+    height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #fa50e9;
+    margin-bottom: 30px;
+}
+
+.hero .cta {
+    display: inline-block;
+    padding: 14px 34px;
+    color: #2bdcf7;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: 0 10px 25px hsla(60, 20%, 95%, 0.267);
+}
+@media(max-width: 768px) {
+    header {
+        padding: 16px 24px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+}
+input, textarea {
+    width: 320px;
+    padding: 12px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 32px;
+}

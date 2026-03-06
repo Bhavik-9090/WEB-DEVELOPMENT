@@ -1,0 +1,70 @@
+<!--
+Project: Personal Portfolio Website
+Name: Bhavik Batra
+Roll Number:- 2401010039
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+<script src="script.js"></script>
+<body> 
+    <header>
+        <h1>1] Bhavik Batra</h1>
+        <p>Student at K.R.Mangalam University</p>
+        <p>Roll Number:- 2401010039</p>
+        <nav>
+            <a href="#aboutHim">About</a>
+            <a href="#skillsofhim">Skills</a>
+            <a href="#projectsofhim">Projects</a>
+            <a href="#contacthim">Contact</a>
+        </nav>
+    </header>
+    <a href="#" onclick="showSection('abouthim')">about</a>
+    <a href="#" onclick="showSection('skillsofhim')">Skills</a>
+    <a href="#" onclick="showSection('projectsofhim')">Projects</a>
+    <a href="#" onclick="showSection('contacthim')">Contact</a>
+    <!-- About Me Section -->
+    <section id="abouthim" class="content">
+        <h2>About Me</h2>
+        <p>
+           I am a motivated computer science student with a strong interest in web development and problem-solving. 
+           I enjoy building clean, user-friendly websites using HTML, CSS, and JavaScript, and
+           I am continuously improving my skills by working on real-world projects and coding challenges. 
+        </p>
+    </section>
+    <!-- Skills Section -->
+    <section id="skillsofhim" class="content">
+        <h2>Skills</h2>
+        <ul>
+            <li>Python </li>
+            <li>JAVA</li>
+            <li>C++</li>
+        </ul>
+    </section>
+    <!-- Projects Section -->
+    <section id="projectsofhim" class="content">
+        <h2>Projects made by Me</h2>
+        <div class="project-card">
+            <h3>LIBROHUB – The Book Management System</h3>
+            <p> The Online library system provides an efficient,reliable, and user-friendly way to handle all library 
+            </p>
+        </div>
+       
+    </section>
+    <!-- Contact Section -->
+    <section id="contacthim" class="content">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <p id="confirmation" class="hidden">Thank you! Your message has been submitted.</p>
+        <button onclick="thankYou()">Click Me</button>
+    </section>
+</body>
+</html>
