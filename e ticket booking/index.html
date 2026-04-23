@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>e-Ticket Booking System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <h1>BookEasy</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="movies.html">Movies</a>
+            <a href="booking.html">Bookings</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Book Movie Tickets Online</h2>
+        <p>Fast • Easy • Secure</p>
+    </section>
+
+    <!-- Movies Section -->
+    <section class="movies">
+        <h2>Now Showing</h2>
+
+       <div class="movie-list">
+
+    <div class="movie-card">
+        <img src="https://tse1.mm.bing.net/th/id/OIP.DVYDQX85lQdcPGsSxAd-rgHaKy?rs=1&pid=ImgDetMain&o=7&rm=3">
+        <h3>Avengers</h3>
+        <p>Action | 2h 30m</p>
+        <button onclick="window.location.href='seat.html'">Book</button>
+    </div>
+
+    <div class="movie-card">
+        <img src="https://img.freepik.com/premium-photo/poster-romantic-couple-by-lake-with-tree-background_960764-8433.jpg?w=2000">
+        <h3>Romantic Night</h3>
+        <p>Romance | 2h 10m</p>
+        <button onclick="window.location.href='seat.html'">Book</button>
+    </div>
+
+    <div class="movie-card">
+        <img src="https://i.pinimg.com/originals/71/41/21/71412164346f146be5e1ad983322f955.jpg">
+        <h3>Haunted House</h3>
+        <p>Horror | 1h 55m</p>
+        <button onclick="window.location.href='seat.html'">Book</button>
+    </div>
+
+    <div class="movie-card">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.MhvNrGbq1YTuKMakdIaFlQHaKX?rs=1&pid=ImgDetMain&o=7&rm=3">
+        <h3>Comedy King</h3>
+        <p>Comedy | 2h 05m</p>
+        <button onclick="window.location.href='seat.html'">Book</button>
+    </div>
+
+    <div class="movie-card">
+        <img src="https://i.pinimg.com/originals/c8/54/cc/c854ccce48c3dbbeb16a834046bce01c.jpg?nii=t">
+        <h3>Spider Hero</h3>
+        <p>Action | 2h 20m</p>
+        <button onclick="window.location.href='seat.html'">Book</button>
+    </div>
+
+    <div class="movie-card">
+        <img src="https://th.bing.com/th/id/OIP.W93G3W4j0jssUFN-ux49HgHaLG?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3">
+        <h3>Space War</h3>
+        <p>Sci-Fi | 2h 40m</p>
+        <button onclick="window.location.href='seat.html'">Book</button>
+    </div>
+
+
+    <div class="movie-card">
+        <img src="https://img.freepik.com/premium-photo/adventure-jungle-background_956999-5383.jpg">
+        <h3>Jungle Adventure</h3>
+        <p>Adventure | 2h 05m</p>
+        <button onclick="window.location.href='seat.html'">Book</button>
+    </div>
+
+    <div class="movie-card">
+        <img src="https://th.bing.com/th/id/OIP.rgMegZvOfDX8IZTq0dMeHAHaLH?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3">
+        <h3>Love Story</h3>
+        <p>Romance | 2h 00m</p>
+        <button onclick="window.location.href='seat.html'">Book</button>
+    </div>
+
+    <div class="movie-card">
+        <img src="https://th.bing.com/th/id/OIP.qYNJ9crS2zQnhTofbmG9xwAAAA?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3">
+        <h3>Mystery Night</h3>
+        <p>Thriller | 1h 50m</p>
+        <button onclick="window.location.href='seat.html'">Book</button>
+    </div>
+
+     <div class="movie-card">
+        <img src="https://static.vecteezy.com/system/resources/previews/014/634/491/non_2x/detective-story-poster-woman-on-rainy-street-free-vector.jpg">
+        <h3>Detective Story</h3>
+        <p>Thriller | 1h 45m</p>
+        <button onclick="window.location.href='seat.html'">Book</button>
+    </div>
+
+</div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="booking">
+        <h2>Quick Booking</h2>
+
+        <form>
+            <label>Movie Name</label>
+            <select required>
+                <option>Select Movie</option>
+                <option>Avenger Returns</option>
+                <option>Romantic Night</option>
+                <option>Haunted House</option>
+            </select>
+
+            <label>Date</label>
+            <input type="date" required>
+
+            <label>Show Time</label>
+            <select required>
+                <option>Select Time</option>
+                <option>10:00 AM</option>
+                <option>2:00 PM</option>
+                <option>6:00 PM</option>
+                <option>9:00 PM</option>
+            </select>
+
+            <label>Number of Tickets</label>
+            <input type="number" min="1" max="10" required>
+            <nav>
+                <a href="seat.html">select seat</a>
+            </nav>
+
+            <button type="submit">Proceed to Payment</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 e-Ticket Booking System</p>
+    </footer>
+
+</body>
+</html>

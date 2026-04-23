@@ -1,0 +1,180 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body */
+body {
+    background: #0f172a;
+    color: #fff;
+}
+
+/* Header */
+.header {
+    background: rgba(15, 23, 42, 0.9);
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    color: #38bdf8;
+}
+
+.header nav a {
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.header nav a:hover {
+    color: #38bdf8;
+}
+
+/* Hero */
+.hero {
+    background: linear-gradient(135deg, #1e3a8a, #0ea5e9);
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    opacity: 0.9;
+}
+
+/* Movies */
+.movies {
+    padding: 50px;
+}
+
+.movies h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.movie-list {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+/* Movie Card */
+.movie-card {
+    background: #1e293b;
+    border-radius: 15px;
+    padding: 15px;
+    width: 220px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.movie-card:hover {
+    transform: translateY(-10px) scale(1.03);
+}
+
+.movie-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.movie-card h3 {
+    margin: 10px 0;
+}
+
+.movie-card p {
+    color: #94a3b8;
+}
+
+/* Button */
+.movie-card button {
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    background: linear-gradient(135deg, #3b82f6, #06b6d4);
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.movie-card button:hover {
+    transform: scale(1.05);
+}
+
+/* Booking Card */
+.booking {
+    background: #1e293b;
+    padding: 30px;
+    margin: 40px auto;
+    max-width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.booking h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.booking input,
+.booking select {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.booking button {
+    background: linear-gradient(135deg, #22c55e, #4ade80);
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.booking button:hover {
+    transform: scale(1.05);
+}
+
+/* Seats */
+.seat {
+    width: 30px;
+    height: 30px;
+    background: #334155;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.seat.selected {
+    background: #22c55e;
+}
+
+.seat.occupied {
+    background: #ef4444;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #020617;
+    margin-top: 40px;
+}

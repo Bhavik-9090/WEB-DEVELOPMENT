@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Payment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="booking">
+    <h2>Payment</h2>
+
+    <form action="booking.php" method="post">
+        <label>Card Number</label>
+        <input type="text" required>
+
+        <label>Expiry Date</label>
+        <input type="month" required>
+
+        <label>CVV</label>
+        <input type="password" required>
+
+        <button type="submit">Pay & Book</button>
+    </form>
+</div>
+ <div class="booking">
+        <h2>Scan & Pay</h2>
+
+        <!-- QR Code -->
+        <div class="qr-box">
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=upi://pay?pa=yourupi@upi&pn=BookEasy&am=200" alt="QR Code">
+        </div>
+
+        <p>Scan using any UPI app</p>
+
+        <div class="upi-apps">
+            <span> Google Pay</span>
+            <span> PhonePe</span>
+            <span> Paytm</span>
+        </div>
+
+        <p class="upi-id">UPI ID: <strong>yourupi@upi</strong></p>
+
+        <button onclick="paymentSuccess()">I Have Paid</button>
+    </div>
+<script>
+function paymentSuccess() {
+    alert("Payment Successful 🎉");
+    window.location.href = "index.html";
+}
+</script>
+
+</body>
+</html>
